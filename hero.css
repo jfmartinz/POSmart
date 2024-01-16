@@ -1,0 +1,76 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main .main-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+.main .main-content h1 {
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.main .main-content .highlight {
+    color: #0077b6;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main .main-content p {
+    color: #6A6A6A;
+    margin-top: 30px;
+}
+
+.main-btn {
+    background-color: #0077b6;
+    padding: 10px 35px;
+    margin-top: 30px;
+    border: none;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main img {
+    width: 1000px;
+}
+
+.layer-blur1,
+.layer-blur2 {
+
+    width: 400px;
+    height: 400px;
+    opacity: 0.1;
+    border-radius: 100%;
+}
+
+.layer-blur1 {
+    background-color: #45c9ae;
+    position: absolute;
+    left: -200px;
+    top: 150px;
+    filter: blur(15px);
+    /* Adjust the blur strength as needed */
+}
+
+.layer-blur2 {
+    background-color: #45c9ae;
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    overflow-x: hidden;
+    filter: blur(20px);
+    z-index: -1;
+    /* Adjust the blur strength as needed */
+}

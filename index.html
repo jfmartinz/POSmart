@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSmart - Transform your business with POSmart. Say goodbye to manual record-keeping, transaction efficiency,
+        accuracy, and make your customers happy! Elevate your business today!</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="features.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="footer.css">
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <link rel="shortcut icon" href="img/POSmart.svg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000">
+            <div class="brand-name">
+                <img src="img/POSmart.svg" alt="POSmart Logo">
+                <h2><span class="highlight">POS</span>mart</h2>
+            </div>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#aboutUs">About Us</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#feature">Features</a></li>
+                <li><a href="#contactUs">Contact Us</a></li>
+            </ul>
+
+            <!-- Login Modal Markup -->
+            <div class="login-container" id="loginContainer">
+                <div class="login-modal">
+                    <form class="login-form" method="#">
+                        <h2>Welcome Back!</h2>
+                        <div class="input-field">
+                            <label for="email">Email Address</label>
+                            <input type="text" required placeholder="example@gmail.com" name="email" id="email">
+                        </div>
+                        <div class="input-field">
+                            <label for="pass">Password</label>
+                            <input type="text" required placeholder="Enter your Password" name="password" id="pass">
+                        </div>
+                        <button type="submit">Login</button>
+                        <a href="#">Don't have an account?</a>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Sign up Modal Markup -->
+            <div class="signup-container" id="signupContainer">
+                <div class="signupModal">
+                    <form class="signup-form" method="#">
+                        <h2>Create your Account</h2>
+                        <div class="input-field">
+                            <label for="sgn-name">Name</label>
+                            <input type="text" required placeholder="John Doe" name="name" id="sgn-name">
+                        </div>
+                        <div class="input-field">
+                            <label for="sgn-email">Email Address</label>
+                            <input type="email" required placeholder="example@gmail.com" name="email" id="sgn-email">
+                        </div>
+                        <div class="input-field">
+                            <label for="sgn-pass">Password</label>
+                            <input type="password" required placeholder="Enter your Password" name="password"
+                                id="sgn-pass">
+                        </div>
+                        <button type="submit">Sign Up</button>
+                        <a href="#">Already have an account?</a>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Overlay for making the modal stands out when the usewr clicked the btn -->
+            <div class="overlay" id="overlay"></div>
+
+            <div class="btns">
+                <button type="button" class="lgn" id="login">Login</button>
+                <button type="button" class="sng" id="signup">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="layer-blur1"></div>
+        <div class="layer-blur2"></div>
+        <section class="main-content">
+            <h1 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Grow Your Business with <br><span
+                    class="highlight">POSmart</span></h1>
+            <p data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">Transform your business with POSmart.
+                Say goodbye to manual record-keeping, transaction efficiency,
+                accuracy, and make your customers happy! Grow your business today!</p>
+        </section>
+
+        <img data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1000" src="img/heroimg.png"
+            alt="POS System Wireframe">
+    </main>
+
+    <!-- About us -->
+    <section class="about-us" id="aboutUs">
+        <div class="container">
+            <div class="aboutus-content">
+                <h4 data-aos="fade-right">ABOUT US
+                    <div class="underline"></div>
+                </h4>
+                <h3 data-aos="fade-right">Ready to <span class="highlight">Grow</span> your Business? Learn More<br>
+                    About <span class="highlight">POSmart</span> </h3>
+                <p data-aos="fade-right">POSmart, or 'Point of Sale System Mart,' is a user-friendly web application
+                    built for <i>People's
+                        Mart</i>
+                    vendors. It streamlines transaction processes, reduces errors, and saves time by automating
+                    point-of-sale and inventory management, eliminating manual paper-based record-keeping.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="peoples-mart">
+        <div class="container">
+            <div class="peoples-mart-flex">
+                <div class="peoples-mart-content">
+                    <h4 data-aos="fade-right">WHAT IS <span class="highlight">PEOPLE'S MART?</span></h4>
+                    <p data-aos="fade-right"><span class="p-highlight">People’s Mart</span> is a large public market
+                        located in Liboton, Naga
+                        City. It
+                        plays a significant
+                        role in the
+                        city's economy and is a popular spot for locals to shop for a variety of goods.</p>
+                    <p data-aos="fade-right">
+                        <span class="p-highlight">POSmart</span> aims to help these small businesses, especially
+                        vendors
+                        that
+                        do not have any
+                        access to
+                        technology like People’s Mart. And now, thanks to <i>POSmart</i>, these vendors can focus on
+                        what
+                        they
+                        do
+                        best—serving their customers—while letting <i>POSmart</i> handle the rest.
+                    </p>
+                </div>
+                <img data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000" src="img/peoplesmart.png"
+                    alt="People's Mart">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="feature">
+        <div class="container">
+            <div class="feature-flex">
+                <div class="features-content">
+                    <h4 data-aos="fade-right" data-aos-delay="500">FEATURES</h4>
+                    <div class="feature-lists" data-aos="fade-right" data-aos-delay="800">
+                        <div>Point Of Sale System</div>
+                        <div>Inventory Management System</div>
+                        <div>Real-Time Inventory Tracking</div>
+                        <div>User-Friendly Interface</div>
+                    </div>
+                </div>
+                <img data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000" src="img/cashier.png"
+                    alt="POS with girl smiling" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="service">
+        <div class="container">
+            <div class="services-content" data-aos="fade-up">
+                <h4>SERVICES</h4>
+                <p>In POSmart, we provide our customers with two services: the <i>Point Of Sale System</i> and the
+                    <i>Inventory
+                        Management System.</i>
+                </p>
+            </div>
+
+
+            <div class="services-lists">
+                <div class="container">
+                    <div class="services-flex">
+                        <div>
+                            <h5 data-aos="fade-right">Point Of Sale System</h5>
+                            <p data-aos="fade-right">Vendors at People's Mart no longer need to manually write down
+                                order details on the
+                                paper.
+                                They
+                                can input product information like name, description, quantity, price, category, etc.
+                                into
+                                our
+                                system, which instantly generates a digital receipt for each order.</p>
+                        </div>
+                        <div>
+                            <img data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000" src="img/pos.png"
+                                alt="Point Of sale system">
+                        </div>
+                    </div>
+                    <div class="services-flex1">
+                        <div>
+                            <h5 data-aos="fade-left" data-aos-delay="500">Inventory Management System</h5>
+                            <p data-aos="fade-left" data-aos-delay="500"> Our system empowers People's Mart vendors to
+                                effortlessly monitor their product
+                                inventory in
+                                real-time. They can add, modify, delete, and update product information to simplify
+                                inventory management.</p>
+                        </div>
+                        <div>
+                            <img data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000"
+                                src="img/inventory.png" alt="Point Of sale system">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="contact-us" id="contactUs">
+        <div class="container">
+            <div class="contactus-content">
+                <h4 data-aos="fade-right" data-aos-delay="500">Contact Us
+                    <div class="underline"></div>
+                </h4>
+                <h3 data-aos="fade-right" data-aos-delay="500">Got questions or need assistance?<br> <span
+                        class="highlight">Reach out</span> to us</h3>
+
+                <div class="contact-information" data-aos="fade-right" data-aos-delay="700">
+                    <p><span class="label">Address:</span> Liboton, Naga City, Camarines Sur</p>
+                    <p><span class="label">Email:</span> posmart145@gmail.com</p>
+                    <p><span class="label">Phone Number:</span> +634040499872 </p>
+                </div>
+
+                <div class="location">
+
+                    <iframe data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.33700774215296!2d123.18990672491013!3d13.633894987888446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a1f34a220e7f6f%3A0x989837f477e76782!2sNAGA%20PEOPLE&#39;S%20MART!5e0!3m2!1sen!2sph!4v1705290126281!5m2!1sen!2sph"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        class="peoples"></iframe>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-flex">
+                <div class="brand-name">
+                    <img src="img/POSmart.svg" alt="POSmart Logo">
+                    <h2>POSmart</h2>
+                </div>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutUs">About Us</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#feature">Features</a></li>
+                    <li><a href="#contactUs">Contact Us</a></li>
+                </ul>
+
+                <p>Copyright © 2023 POSmart. All rights reserved.</p>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

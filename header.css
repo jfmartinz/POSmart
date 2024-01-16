@@ -1,0 +1,310 @@
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #f5f8ff;
+    overflow-x: hidden;
+}
+
+.header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+}
+
+ul li {
+    position: relative;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+ul li a:hover {
+    color: #45c9ae;
+    transition: 0.2s ease;
+}
+
+
+.nav .brand-name {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav .brand-name h2 {
+    font-weight: 400;
+}
+
+.nav .btns .sng {
+    background-color: #0077b6;
+    padding: 8px 30px;
+    border-radius: 5px;
+    border: 2px solid #0077b6;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav .btns .lgn {
+    background-color: #f5f8ff;
+    border: 2px solid #000;
+    padding: 8px 35px;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.highlight {
+    color: #0077b6;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+
+/* styling for logins (LOGIN*/
+
+.login-container {
+    background-color: #45c9ae;
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+/* To show the login */
+.login-container.show {
+    opacity: 1;
+    z-index: 1000;
+
+
+    visibility: visible;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    /* Semi-transparent black overlay */
+}
+
+.overlay.overlay-show {
+    display: block;
+}
+
+.login {
+    padding: 2rem;
+    transition: 0.1 all ease;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.login-form label {
+    display: block;
+    margin-top: 36px;
+    margin-bottom: 3px;
+    color: #fff;
+}
+
+.login-form label:last-of-type {
+    margin-top: 10px;
+}
+
+.login-form h2 {
+    color: #fff;
+    margin-bottom: 20px
+}
+
+.login-form input {
+    width: 300px;
+    padding: 8px 8px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+.login-form button {
+    width: 300px;
+    padding: 8px 25px;
+    background-color: #0077b6;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: #fff;
+    margin-top: 21px;
+    cursor: pointer;
+}
+
+.login-form a {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 14px;
+}
+
+input::placeholder {
+    opacity: 0.5;
+}
+
+
+/* Sign UP modal styling */
+
+
+.signup-container {
+    background-color: #45c9ae;
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+/* To show the login */
+.signup-container.showSignup {
+    opacity: 1;
+    z-index: 1000;
+
+    visibility: visible;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    /* Semi-transparent black overlay */
+}
+
+.overlay.overlay-show {
+    display: block;
+}
+
+.signup {
+    padding: 2rem;
+    transition: 0.1 all ease;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.signup-form label {
+    display: block;
+    margin-top: 36px;
+    margin-bottom: 3px;
+    color: #fff;
+}
+
+.signup-form label:last-of-type {
+    margin-top: 10px;
+}
+
+.signup-form h2 {
+    color: #fff;
+    margin-bottom: 20px
+}
+
+.signup-form input {
+    width: 300px;
+    padding: 8px 8px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+.signup-form button {
+    width: 300px;
+    padding: 8px 25px;
+    background-color: #0077b6;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: #fff;
+    margin-top: 21px;
+    cursor: pointer;
+}
+
+.signup-form a {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 14px;
+}
+
+input::placeholder {
+    opacity: 0.5;
+}
+
+
+
+/* Scrollbar styling */
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #45C9AE #DFE9EB;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #DFE9EB;
+}
+
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #45C9AE;
+}

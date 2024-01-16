@@ -1,0 +1,54 @@
+.features {
+    margin-top: 10rem;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.features h4 {
+    margin-bottom: 36px;
+    font-size: 25px;
+    color: #0379B7;
+}
+
+.features .features-content {
+    /* display: flex; */
+    margin-top: 50px;
+}
+
+.feature-flex {
+    display: flex;
+    gap: 20.625rem;
+}
+
+.feature-lists {
+    position: relative;
+    counter-reset: feature-counter;
+}
+
+.feature-lists>div {
+    margin-top: 40px;
+    margin-left: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.feature-lists>div:first-of-type {
+    margin-top: 0;
+}
+
+.feature-lists>div::before {
+    content: counter(feature-counter);
+    counter-increment: feature-counter;
+    position: absolute;
+    left: -5px;
+    background-color: #45c9ae;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}

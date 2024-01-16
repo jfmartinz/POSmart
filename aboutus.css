@@ -1,0 +1,97 @@
+.about-us {
+    margin-top: 10rem;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.aboutus-content .highlight {
+    color: #0077b6;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.aboutus-content h3 {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 30px;
+}
+
+
+
+.aboutus-content h4 {
+    font-size: 25px;
+    font-weight: 400;
+    position: relative;
+    color: #000;
+}
+
+.aboutus-content h4 .underline {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    border: 2px solid #45C9AE;
+}
+
+.aboutus-content h4 {
+    font-size: 20px;
+}
+
+.aboutus-content p {
+    color: #6A6A6A;
+    max-width: 692px;
+    margin-top: 20px;
+}
+
+/* What is Peoples mart styles */
+
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container .peoples-mart-content h4 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container .peoples-mart-content .highlight {
+    color: #0077b6;
+    font-weight: bold;
+}
+
+.container .peoples-mart-content p {
+    max-width: 520px;
+    color: #6A6A6A;
+}
+
+.container .peoples-mart-content p:first-of-type {
+    margin-top: 16px;
+}
+
+.container .peoples-mart-content p:last-of-type {
+    margin-top: 31px;
+}
+
+.peoples-mart {
+    margin-top: 9.0625rem;
+}
+
+.peoples-mart-flex {
+    display: flex;
+    column-gap: 121px;
+}
+
+.p-highlight {
+    color: #0077b6;
+}
+
+img {
+    max-width: 100%;
+}
