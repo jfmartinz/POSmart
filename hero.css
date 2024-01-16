@@ -10,6 +10,7 @@
     max-width: 800px;
     margin: 0 auto;
     margin-top: 10rem;
+    z-index: -1;
 }
 
 .main .main-content h1 {
