@@ -94,9 +94,8 @@ ul li a:hover {
     top: 100px;
     left: 27%;
     border-radius: 8px;
-    z-index: 1000;
+    z-index: 1000111;
     opacity: 0;
-    visibility: hidden;
     transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
 }
 

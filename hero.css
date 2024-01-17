@@ -1,16 +1,32 @@
 .main {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: linear-gradient(5deg, rgba(41, 193, 162, 0.8) 0%, rgba(95, 255, 220, 0.8) 39%, rgba(255, 255, 255, 0.8) 100%), url(img/hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    /* Adjust the z-index to control the overlay position */
+}
+
 
 .main .main-content {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
     margin-top: 10rem;
-    z-index: -1;
 }
 
 .main .main-content h1 {
@@ -28,8 +44,9 @@ img {
 }
 
 .main .main-content p {
-    color: #6A6A6A;
+    color: #000000;
     margin-top: 30px;
+    font-weight: 500;
 }
 
 .main-btn {
